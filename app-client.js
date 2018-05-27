@@ -16,4 +16,4 @@ const Routes = (
 )
 
 const app =document.getElementById('app')
-render(Routrs, app)
+render(Routes, app)
