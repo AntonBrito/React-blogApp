@@ -29,11 +29,15 @@ app.get('*', (req, res) => {
                 res.status(200).render('index.html')
 
               } else {
-
                 res.status(400).render('index.html')
               }
-
-
     })
 })
+app.listen(app.get('port'))
 
+console.info('==> server is listening in ' + procenss.env.NODE_ENV + 'mode')
+console.info('==> Go to http://localhost:%s', + app.get('port'))
+
+// These are converting the rendered markup 
+//into a string and then passing it as a 
+//variable to our template.
